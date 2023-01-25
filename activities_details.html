@@ -62,7 +62,27 @@
         <article>
             <h2>Vélo</h2>
             <p>Description vélo</p>
-            <div id="calendar"></div>
+            <div id="calendar">
+                <section>
+                    <span id="monthBack"><i class="fa-solid fa-chevron-left"></i></span>
+                    <span id="MonthYear"></span>
+                    <span id="monthAhead"><i class="fa-solid fa-chevron-right"></i></span>
+                </section>
+                <table>
+                    <thead>
+                        <th>Lun</th>
+                        <th>Mar</th>
+                        <th>Mer</th>
+                        <th>Jeu</th>
+                        <th>Ven</th>
+                        <th>Sam</th>
+                        <th>Dim</th>
+                    </thead>
+                    <tbody id="weeks"></tbody>
+                    
+                </table>
+                
+            </div>
             <div class="container-fluid px-0 px-sm-4 mx-auto">
                 <div class="row justify-content-center mx-0">
                   <div class="col-lg-10">
@@ -121,5 +141,6 @@
     </section>
 </body>
 
+<script src="../script/hour_script.js"></script>
 <script src="../script/calendar_script.js"></script>
 </html>

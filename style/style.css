@@ -51,7 +51,7 @@ html {
 }
 
 
-/* Calendar */
+/* Hour */
 
 .container-fluid {
     padding-top: 120px !important;
@@ -179,4 +179,4 @@ thead tr:nth-child(3) th {
   cursor: pointer;
 }
 
-/* Calendar end */
+/* Hour end */
