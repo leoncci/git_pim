@@ -52,6 +52,7 @@ body {
 .btn {
     opacity: 95%;
     background-color: rgb(6, 131, 52) !important;
+    color: white !important;
 }
 
 .btn:hover {
