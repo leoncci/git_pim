@@ -15,6 +15,10 @@ html {
 
 }
 
+body {
+    font-family: arvo !important;
+}
+
 .navbar-brand {
     font-family: solitero;
     font-size: 35px !important;
@@ -43,4 +47,13 @@ html {
 
 .jumbotron-text {
     padding-top: 30vh;
+}
+
+.btn {
+    opacity: 95%;
+    background-color: rgb(6, 131, 52) !important;
+}
+
+.btn:hover {
+    opacity: 85%;
 }
