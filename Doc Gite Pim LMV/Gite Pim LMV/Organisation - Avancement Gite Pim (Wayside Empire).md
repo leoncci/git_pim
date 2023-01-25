@@ -13,8 +13,7 @@ Leon :
 	- [x] Reservations
 	- [x] Activites
 		- [x] Carousel
-	- [ ] Packages 
-		- [ ] Carousel
+	- [x] Packages 
 	- [ ] Page Hebergement détails (3)
 		Pour chaque hébergement
 		- [ ] Image

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Gite Pim LMV/Organisation - Avancement Gite Pim (Wayside Empire).md",
+                "file": "Gite Pim LMV/Doc Gite Pim (Wayside Empire).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Gite Pim LMV/Organisation - Avancement Gite Pim (Wayside Empire).md",
+                "file": "Gite Pim LMV/Doc Gite Pim (Wayside Empire).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Gite Pim LMV/Organisation - Avancement Gite Pim (Wayside Empire).md",
+                "file": "Gite Pim LMV/Doc Gite Pim (Wayside Empire).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Gite Pim LMV/Organisation - Avancement Gite Pim (Wayside Empire).md"
+                "file": "Gite Pim LMV/Doc Gite Pim (Wayside Empire).md"
               }
             }
           }
@@ -148,8 +148,9 @@
   },
   "active": "a980f81e2d242b4d",
   "lastOpenFiles": [
-    "Gite Pim LMV/Instructions.md",
     "Gite Pim LMV/Doc Projet.md",
+    "Gite Pim LMV/Instructions.md",
+    "Gite Pim LMV/Organisation - Avancement Gite Pim (Wayside Empire).md",
     "Gite Pim LMV/Doc Gite Pim (Wayside Empire).md"
   ]
 }
