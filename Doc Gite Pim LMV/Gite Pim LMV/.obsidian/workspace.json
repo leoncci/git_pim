@@ -1,0 +1,166 @@
+{
+  "main": {
+    "id": "e62c3e96cdb684d6",
+    "type": "split",
+    "children": [
+      {
+        "id": "21e3a2716b232b87",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5cbf82110aadd85e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Doc Gite Pim (Wayside Empire).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2b156e07019ec89a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Instructions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8819608c5ca9a944",
+    "type": "split",
+    "children": [
+      {
+        "id": "ab29305cf0d49e51",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b69d17e5286900cd",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "03d1ed107f6e1583",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5da725fd604340b6",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "223b54447a822b78",
+    "type": "split",
+    "children": [
+      {
+        "id": "11e24015f85c1081",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5560f64295c0c9c1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Doc Gite Pim (Wayside Empire).md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9182225c19943bba",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Doc Gite Pim (Wayside Empire).md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3ae579cf866fb6d2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ee7e35743cf9025c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Doc Gite Pim (Wayside Empire).md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "b69d17e5286900cd",
+  "lastOpenFiles": [
+    "Instructions.md",
+    "Doc Gite Pim (Wayside Empire).md"
+  ]
+}
