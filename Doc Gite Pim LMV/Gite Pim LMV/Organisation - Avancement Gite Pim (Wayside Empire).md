@@ -11,10 +11,15 @@ Leon :
 - [ ] FRONTEND
 	- [x] Jumbotron
 	- [x] Reservations
-	- [ ] Activites
-		- [ ] Carousel
+	- [x] Activites
+		- [x] Carousel
 	- [ ] Packages 
 		- [ ] Carousel
+	- [ ] Page Hebergement détails (3)
+		Pour chaque hébergement
+		- [ ] Image
+		- [ ] Description
+		- [ ] Calendrier dispo
 
 Mavrick : 
 - [x] MAQUETTAGE 
@@ -37,11 +42,11 @@ Vivian :
 	- [ ] Tâches
 	- [ ] Kanban
 
-
 - [ ] Aspect général ? 
 
 - [ ] FRONTEND
 	- [x] Création du logo
+	- [x] Footer
 	- [ ] Reservations
 	- [ ] Aspect général
 
