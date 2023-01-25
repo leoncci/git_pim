@@ -1,0 +1,60 @@
+@font-face {
+    font-family: solitero;
+    src: url("../fonts/Solitreo-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: arvo;
+    src: url("../fonts/Arvo-Regular.ttf") format("truetype");
+}
+
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: arvo !important;
+}
+
+.navbar-brand {
+    font-family: solitero;
+    font-size: 35px !important;
+}
+
+#jumbotron {
+
+    width: 100%;
+    height: 100%;
+
+    background-image: url("../img/jumbo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-bottom: 60vh;
+    font-family: arvo;
+
+
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 23px;
+    margin-left: 7vh;
+}
+
+.jumbotron-text {
+    padding-top: 30vh;
+}
+
+.btn {
+    opacity: 95%;
+    background-color: rgb(6, 131, 52) !important;
+    color: white !important;
+}
+
+.btn:hover {
+    opacity: 85%;
+}
