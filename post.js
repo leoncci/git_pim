@@ -4,20 +4,21 @@ function add() {
 
 
     var xhttp = new XMLHttpRequest();
-    xhttp.open("POST", "https://tst.quantiq.nc/devweb-cfa/api/index.php?service=gite&object=room&action=list", true);
+    var token = "D@lL@5Mùl!P@5S3"
+    xhttp.open("POST", "https://tst.quantiq.nc/devweb-cfa/api/index.php?service=gite&object=roomreservation&action=create", true);
 
     // Récupération des informations de l'utilisateur à rentrer dans l'API
-    firstName = document.getElementById("post_firstname").value;
-    lastName = document.getElementById("post_lastname").value;
-    jobTitle = document.getElementById("post_jobtitle").value;
-    email = document.getElementById("post_email").value;
+    numero_chambre = document.getElementById("numero_chambre").value;
+    type_chambre = document.getElementById("type_chambre").value;
+    date_entree = document.getElementById("date_entree").value;
+    date_sortie = document.getElementById("date_sortie").value;
     //
     var params =
-        "&name=" + firstName +
-        "&last_name=" + lastName +
-        "&job_title=" + jobTitle +
-        "&email=" + email;
 
+        "&idRoom=" + numero_chambre +
+        "&dateEntree=" + "2023-12-12" +
+        "&dateSortie=" + "2023-2-15" + "&token=" + token;
+    console.log(params)
     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhttp.setRequestHeader("Content-length", params.length);
     xhttp.setRequestHeader("Connection", "close");
@@ -27,6 +28,7 @@ function add() {
     xhttp.onreadystatechange = function () {
         // If the request completed, close the extension popup
         if (xhttp.readyState == 4) {
+            console.log("test")
 
 
         }
