@@ -25,6 +25,7 @@
 </head>
 
 <body>
+    <button type="button " class="btn btn-warning " id="button_modal_delete" onclick="modalAnnulation()">Annuler ma reservation</button>
     <div class="container text-center">
         <div class="row">
             <div class="col-lg-4 " id="reservation_kanoe" onclick="modalKanoe()">
@@ -102,24 +103,50 @@
                 </div>
             </div>
         </div>
+            <!-- Modal delete -->
+        <div class="modal fade" id="modaldelete" tabindex="-1" role="dialog" aria-labelledby="modaldeleteTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modify with id</h5>
+                    <button type="button" class="close" data-dismiss="modaldelete" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="">Numero de reservation afin de supprimer: </label>
+                            <input class="form-control" id="id_delete" type="text">
+                        </div>
+
+                      
+
+                    </form>
 
 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modaldelete">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="del()">Reserver</button>
+                </div>
+            </div>
+        </div>
     </div>
+        
 
-    <!-- TABLE -->
-    <div id="tab"></div>
+
+
 
     <!-- JS -->
 
     <script src="../get.js"></script>
     <script src="../post_activite.js"></script>
+    <script src="../annulation.js"></script>
 
 
-    <!-- BACK TO TOP BUTTON -->
-    <div>
 
-        <a href="#" id="back-to-top"><i class="fa-solid fa-chevron-up fa-2x"></i></a>
-    </div>
 
 </body>
 
