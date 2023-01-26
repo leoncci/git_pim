@@ -52,7 +52,7 @@ xhttp.onreadystatechange = function () {
 
 
                 cell = row.insertCell(-1);
-                cell.innerHTML = recup[i].number;
+                cell.innerHTML = recup[i].id;
 
                 cell = row.insertCell(-1);
                 cell.innerHTML = recup[i].type;
@@ -85,7 +85,7 @@ xhttp.onreadystatechange = function () {
              
                     numb = event.target.id
                     getByID(numb);
-               
+  
           
                     
                     
