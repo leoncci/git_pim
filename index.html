@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
     <!-- Lien fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -48,11 +48,11 @@
                     </li>
                     <!-- Reservation -->
                     <li class="nav-item">
-                        <a class="nav-link" href="reservation">Reservation</a>
+                        <a class="nav-link" href="./reservation.html">Hébergements</a>
                     </li>
                     <!-- Activités -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#activites">Activités</a>
+                        <a class="nav-link" href="./reservation_activitee.html">Activités</a>
                     </li>
                     <!-- Contact -->
                     <li class="nav-item">
@@ -66,7 +66,7 @@
             <h1>Profitez d'une expérience inédite en plein coeur de la forêt de l'île de Pam </h1>
             <!-- Bouton jumbotron -->
             <br><br><br>
-            <button class="btn" style="font-size: 24px;" onclick="window.location.href ='hebergement.html'">Reservez dès maintenant</button>
+            <button class="btn" style="font-size: 24px;" onclick="window.location.href ='reservation.html'">Reservez dès maintenant</button>
         </div>
 
     </section>
@@ -84,7 +84,7 @@
     <div class="text-center container ">
         <div class="row pt-2 justify-content-center mb-5">
             <!-- Carousel ACTIVITES-->
-            <div class="col-10" id="activites">
+            <div class="col-10">
                 <h1>Activités</h1>
                 <div id="carouselActivites" class="text-white carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -96,34 +96,26 @@
                     <div class="carousel-inner">
                         <!-- Balade en kayak -->
                         <div class="carousel-item active">
-                            <img class="opacity-80 d-block w-100" src="../img/kayak.jpg" alt="kayak">
+                            <a href="/reservation_activitee.html"><img class="d-block w-100" src="./img/kayak.jpg" alt="Image kayak"></a>
                             <div class="carousel-caption d-none d-md-block">
-                                <h5 class="display-4">Profitez d'une superbe ballade en kayak dans la baie de Poum</h5>
-                                <button class="btn  text-white">En savoir plus</button>
+                                <h5 class="display-4">Profitez d'une superbe ballade en kanoe dans la baie de Poum</h5>
+                                <button class="btn  text-white"><a class="text-white" href="/reservation_activitee.html">Réservez</a></button>
                             </div>
                         </div>
-                        <!-- Découverte Mangrove -->
+                        <!-- Randonnée -->
                         <div class="carousel-item">
-                            <img class="opacity-80 d-block w-100" src="../img/paddle.jpg" alt="paddle">
+                            <a href="/reservation_activitee.html"><img class="d-block w-100" src="./img/rando.png" alt="Image randonnée"></a>
                             <div class="carousel-caption d-none d-md-block">
-                                <h5 class="display-4">Découvrez des endroits inédits au fin fond de la mangrove de Poum</h5>
-                                <button class="btn  text-white">En savoir plus</button>
-                            </div>
-                        </div>
-                        <!-- Balade VTT -->
-                        <div class="carousel-item">
-                            <img class="opacity-80 d-block w-100" src="../img/velo.jpg" alt="Velo">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="display-4">Prenez un grand bol d'air frais avec nos ballade en VTT</h5>
-                                <button class="btn  text-white">En savoir plus</button>
+                                <h5 class="display-4">Prenez un grand bol d'air frais durant une randonnée en forêt</h5>
+                                <button class="btn  text-white"><a class="text-white" href="/reservation_activitee.html">Réservez</a></button>
                             </div>
                         </div>
                         <!-- Découverte Lagon -->
                         <div class="carousel-item">
-                            <img class="opacity-80 d-block w-100" src="../img/plonge.webp" alt="Velo">
+                            <a href="/reservation_activitee.html"><img class="d-block w-100" src="./img/groupe_plongee.png" alt="Groupe de plongée"></a>
                             <div class="carousel-caption d-none d-md-block">
                                 <h5 class="display-4">Faites d'incroyables découvertes dans le lagon</h5>
-                                <button class="btn  text-white">En savoir plus</button>
+                                <button class="btn  text-white"><a class="text-white" href="/reservation_activitee.html">Réservez</a></button>
                             </div>
                         </div>
                     </div>
@@ -156,30 +148,34 @@
                     <div class="carousel-inner">
                         <!-- Escargots -->
                         <div class="carousel-item active">
-                            <img class="opacity-80 d-block w-100" src="../img/escargotsIleDesPins.jpg" alt="Escargots de l'Ile Des Pins">
+                            <a href="/reservation_activitee.html"><img class="d-block w-100" src="./img/escargotsIleDesPins.jpg" alt="Escargots de l'Ile Des Pins"></a>
                             <div class="carousel-caption d-none d-md-block">
                                 <h5 class="display-4">Escargots de l'Ile des Pins</h5>
+                                <button class="btn  text-white"><a class="text-white" href="/reservation_activitee.html">Réservez</a></button>
                             </div>
                         </div>
                         <!-- Poissons -->
                         <div class="carousel-item">
-                            <img class="opacity-80 d-block w-100" src="../img/poissonLagon.jpg" alt="Poisson du lagon Calédonien">
+                            <a href="/reservation_activitee.html"><img class="d-block w-100" src="./img/poissonLagon.jpg" alt="Poisson du lagon Calédonien"></a>
                             <div class="carousel-caption d-none d-md-block">
                                 <h5 class="display-4">Les poissons du lagon Calédonien</h5>
+                                <button class="btn  text-white"><a class="text-white" href="/reservation_activitee.html">Réservez</a></button>
                             </div>
                         </div>
                         <!-- Bougna -->
                         <div class="carousel-item">
-                            <img class="opacity-80 d-block w-100" src="../img/bougna.jpg" alt="Velo">
+                            <a href="/reservation_activitee.html"><img class="d-block w-100" src="./img/bougna.jpg" alt="Bougna"></a>
                             <div class="carousel-caption d-none d-md-block">
                                 <h5 class="display-4">Bougna</h5>
+                                <button class="btn  text-white"><a class="text-white" href="/reservation_activitee.html">Réservez</a></button>
                             </div>
                         </div>
                         <!-- Poisson cru Soyo -->
                         <div class="carousel-item">
-                            <img class="opacity-80 d-block w-100" src="../img/poissonCruSoyo.jpg" alt="Velo">
+                            <a href="/reservation_activitee.html"><img class="d-block w-100" src="./img/poissonCruSoyo.jpg" alt="Poisson cru au soyo"></a>
                             <div class="carousel-caption d-none d-md-block">
                                 <h5 class="display-4">Poisson cru au soyo</h5>
+                                <button class="btn  text-white"><a class="text-white stretched-link" href="/reservation_activitee.html">Réservez</a></button>
                             </div>
                         </div>
                     </div>
