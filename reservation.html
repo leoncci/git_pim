@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="../style/style.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
@@ -36,6 +36,35 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-expand-lg navbar-ligth bg-dark">
+      <!-- Titre/Logo -->
+      <a class="navbar-brand text-white" href="index.html" >Gîte Pim</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- MENU BURGER -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              <!-- A propos -->
+              <li class="nav-item ">
+                  <a class="nav-link" href="#apropos">A propos</a>
+              </li>
+              <!-- Reservation -->
+              <li class="nav-item">
+                  <a class="nav-link" href="./reservation.html">Hébergements</a>
+              </li>
+              <!-- Activités -->
+              <li class="nav-item">
+                  <a class="nav-link" href="./reservation_activitee.html">Activités</a>
+              </li>
+              <!-- Contact -->
+              <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
     <div class="m-2 text-center">
       <div
         class="modal fade"
@@ -129,6 +158,7 @@
     <div id="tab"></div>
    
     <button type="button " class="btn btn-danger "onclick="modalAnnulationRoom()">Annuler ma reservation</button>
+    <a type="button " class="btn btn-danger " href="consultation.html">Consultation les réservations</a>
 
     <!-- JS -->
     <script src="./script.js"></script>
