@@ -1,224 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/style.css" />
     <!-- Lien fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- Lien bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Gîte Pim</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- JUMBOTRON -->
     <section id="jumbotron">
-        <!-- Nav bar -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <!-- Titre/Logo -->
-            <a class="navbar-brand" href="#">Gîte Pim</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- MENU BURGER -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <!-- A propos -->
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#apropos">A propos</a>
-                    </li>
-                    <!-- Reservation -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="./reservation.html">Hébergements</a>
-                    </li>
-                    <!-- Activités -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="./reservation_activitee.html">Activités</a>
-                    </li>
-                    <!-- Contact -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!-- Texte jumbotron -->
-        <div class="container text-center text-white w-75 mt-5 jumbotron-text">
-            <h1>Profitez d'une expérience inédite en plein coeur de la forêt de l'île de Pam </h1>
-            <!-- Bouton jumbotron -->
-            <br><br><br>
-            <button class="btn" style="font-size: 24px;" onclick="window.location.href ='reservation.html'">Reservez dès maintenant</button>
+      <!-- Nav bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <!-- Titre/Logo -->
+        <a class="navbar-brand" href="#">Gîte Pim</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- MENU BURGER -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <!-- A propos -->
+            <li class="nav-item">
+              <a class="nav-link" href="#apropos">A propos</a>
+            </li>
+            <!-- Reservation -->
+            <li class="nav-item">
+              <a class="nav-link" href="./reservation.html">Hébergements</a>
+            </li>
+            <!-- Activités -->
+            <li class="nav-item">
+              <a class="nav-link" href="./reservation_activitee.html"
+                >Activités</a
+              >
+            </li>
+            <!-- Contact -->
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-
+      </nav>
+      <!-- Texte jumbotron -->
+      <div class="container text-center text-white w-75 mt-5 jumbotron-text">
+        <h1>
+          Profitez d'une expérience inédite en plein coeur de la forêt de l'île
+          de Pam
+        </h1>
+        <!-- Bouton jumbotron -->
+        <br /><br /><br />
+        <button
+          class="btn"
+          style="font-size: 24px"
+          onclick="window.location.href ='reservation.html'"
+        >
+          Reservez dès maintenant
+        </button>
+      </div>
     </section>
     <!-- A propos de nous -->
     <section id="apropos" class="container text-center w-75 mt-4">
-        <h1>A propos de nous</h1>
-        <p class="mt-4 pb-4">Au gite Pim, nous nous plierons en quatre afin de rendre
-            votre séjour le plus magique possible grâce à un environnement somptueux, des activités en plein
-            air telle que le vélo, le paddle et la plongée ainsi qu'un service disponible à toute heure de la
-            journée. Pour vos repas, notre chef saura vous faire vivre des expériences culinaires
-            incroyables et sans égales. </p>
+      <h1>A propos de nous</h1>
+      <p class="mt-4 pb-4">
+        Au gite Pim, nous nous plierons en quatre afin de rendre votre séjour le
+        plus magique possible grâce à un environnement somptueux, des activités
+        en plein air telle que le vélo, le paddle et la plongée ainsi qu'un
+        service disponible à toute heure de la journée. Pour vos repas, notre
+        chef saura vous faire vivre des expériences culinaires incroyables et
+        sans égales.
+      </p>
     </section>
 
     <!-- ACTIVITES + MENU -->
-    <div class="text-center container ">
-        <div class="row pt-2 justify-content-center mb-5">
-            <!-- Carousel ACTIVITES-->
-            <div class="col-10">
-                <h1>Activités</h1>
-                <div id="carouselActivites" class="text-white carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselActivites" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselActivites" data-slide-to="1"></li>
-                        <li data-target="#carouselActivites" data-slide-to="2"></li>
-                        <li data-target="#carouselActivites" data-slide-to="3"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <!-- Balade en kayak -->
-                        <div class="carousel-item active">
-                            <a href="/reservation_activitee.html"><img class="d-block w-100" src="./img/kayak.jpg" alt="Image kayak"></a>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="display-4">Profitez d'une superbe ballade en kanoe dans la baie de Poum</h5>
-                              <a href="/reservation_activitee.html"><img class="d-block w-100" src="./img/bougna.jpg" alt="Bougna"></a>
-                            </div>
-                        </div>
-                        <!-- Randonnée -->
-                        <div class="carousel-item">
-                            <a href="/reservation_activitee.html"><img class="d-block w-100" src="./img/rando.png" alt="Image randonnée"></a>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="display-4">Prenez un grand bol d'air frais durant une randonnée en forêt</h5>
-                              <a href="/reservation_activitee.html"><img class="d-block w-100" src="./img/bougna.jpg" alt="Bougna"></a>
-                            </div>
-                        </div>
-                        <!-- Découverte Lagon -->
-                        <div class="carousel-item">
-                            <a href="/reservation_activitee.html"><img class="d-block w-100" src="./img/groupe_plongee.png" alt="Groupe de plongée"></a>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="display-4">Faites d'incroyables découvertes dans le lagon</h5>
-                              <a href="/reservation_activitee.html"><img class="d-block w-100" src="./img/bougna.jpg" alt="Bougna"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselActivites" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselActivites" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+    <div class="text-center container">
+      <div class="row pt-2 justify-content-center mb-5">
+        <!-- Carousel ACTIVITES-->
+        <div class="col-10">
+          <h1>Activités</h1>
+          <div
+            id="carouselActivites"
+            class="text-white carousel slide"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselActivites"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#carouselActivites" data-slide-to="1"></li>
+              <li data-target="#carouselActivites" data-slide-to="2"></li>
+              <li data-target="#carouselActivites" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <!-- Balade en kayak -->
+              <div class="carousel-item active">
+                <a href="./reservation_activitee.html"
+                  ><img
+                    class="d-block w-100"
+                    src="./img/kayak.jpg"
+                    alt="Image kayak"
+                /></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="display-4">
+                    Profitez d'une superbe ballade en kanoe dans la baie de Poum
+                  </h5>
+                  <a href="./reservation_activitee.html"
+                    ><img
+                      class="d-block w-100"
+                      src="./img/bougna.jpg"
+                      alt="Bougna"
+                  /></a>
                 </div>
+              </div>
+              <!-- Randonnée -->
+              <div class="carousel-item">
+                <a href="./reservation_activitee.html"
+                  ><img
+                    class="d-block w-100"
+                    src="./img/rando.png"
+                    alt="Image randonnée"
+                /></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="display-4">
+                    Prenez un grand bol d'air frais durant une randonnée en
+                    forêt
+                  </h5>
+                  <a href="./reservation_activitee.html"
+                    ><img
+                      class="d-block w-100"
+                      src="./img/bougna.jpg"
+                      alt="Bougna"
+                  /></a>
+                </div>
+              </div>
+              <!-- Découverte Lagon -->
+              <div class="carousel-item">
+                <a href="./reservation_activitee.html"
+                  ><img
+                    class="d-block w-100"
+                    src="./img/groupe_plongee.png"
+                    alt="Groupe de plongée"
+                /></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="display-4">
+                    Faites d'incroyables découvertes dans le lagon
+                  </h5>
+                  <a href="./reservation_activitee.html"
+                    ><img
+                      class="d-block w-100"
+                      src="./img/bougna.jpg"
+                      alt="Bougna"
+                  /></a>
+                </div>
+              </div>
             </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselActivites"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselActivites"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
         </div>
+      </div>
     </div>
 
-    <div class="text-center container ">
-        <div class="row pt-2 justify-content-center mb-5">
-            <!-- Carousel MENU -->
-            <div class="col-10" id="menu">
-                <h1>Restaurant</h1>
-                <div id="carouselRestaurant" class="text-white carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselRestaurant" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselRestaurant" data-slide-to="1"></li>
-                        <li data-target="#carouselRestaurant" data-slide-to="2"></li>
-                        <li data-target="#carouselRestaurant" data-slide-to="3"></li>
-                    </ol>
-            
-                    <div class="carousel-inner">
-                        <!-- Escargots -->
-                        <div class="carousel-item active">
-                            <a href="/reservation_activitee.html"><img class="d-block w-100" src="./img/escargotsIleDesPins.jpg" alt="Escargots de l'Ile Des Pins"></a>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="display-4">Escargots de l'Ile des Pins</h5>
-                               <a class="btn  text-white" href="/reservation_activitee.html">Réservez</a>
-                            </div>
-                        </div>
-                        <!-- Poissons -->
-                        <div class="carousel-item">
-                            <a href="/reservation_activitee.html"><img class="d-block w-100" src="./img/poissonLagon.jpg" alt="Poisson du lagon Calédonien"></a>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="display-4">Les poissons du lagon Calédonien</h5>
-                             <a class="btn  text-white" href="/reservation_activitee.html">Réservez</a>
-                            </div>
-                        </div>
-                        <!-- Bougna -->
-                        <div class="carousel-item">
-                            <a href="/reservation_activitee.html"><img class="d-block w-100" src="./img/bougna.jpg" alt="Bougna"></a>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="display-4">Bougna</h5>
-                             <a class="btn  text-white" href="/reservation_activitee.html">Réservez</a>
-                            </div>
-                        </div>
-                        <!-- Poisson cru Soyo -->
-                        <div class="carousel-item">
-                            <a href="/reservation_activitee.html"><img class="d-block w-100" src="./img/poissonCruSoyo.jpg" alt="Poisson cru au soyo"></a>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="display-4">Poisson cru au soyo</h5>
-                             <a class="btn text-white stretched-link" href="/reservation_activitee.html">Réservez</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Item Previous -->
-                    <a class="carousel-control-prev" href="#carouselRestaurant" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <!-- Item Next -->
-                    <a class="carousel-control-next" href="#carouselRestaurant" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+    <div class="text-center container">
+      <div class="row pt-2 justify-content-center mb-5">
+        <!-- Carousel MENU -->
+        <div class="col-10" id="menu">
+          <h1>Restaurant</h1>
+          <div
+            id="carouselRestaurant"
+            class="text-white carousel slide"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselRestaurant"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#carouselRestaurant" data-slide-to="1"></li>
+              <li data-target="#carouselRestaurant" data-slide-to="2"></li>
+              <li data-target="#carouselRestaurant" data-slide-to="3"></li>
+            </ol>
+
+            <div class="carousel-inner">
+              <!-- Escargots -->
+              <div class="carousel-item active">
+                <a href="./reservation_activitee.html"
+                  ><img
+                    class="d-block w-100"
+                    src="./img/escargotsIleDesPins.jpg"
+                    alt="Escargots de l'Ile Des Pins"
+                /></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="display-4">Escargots de l'Ile des Pins</h5>
+                  <a class="btn text-white" href="./reservation_activitee.html"
+                    >Réservez</a
+                  >
                 </div>
+              </div>
+              <!-- Poissons -->
+              <div class="carousel-item">
+                <a href="./reservation_activitee.html"
+                  ><img
+                    class="d-block w-100"
+                    src="./img/poissonLagon.jpg"
+                    alt="Poisson du lagon Calédonien"
+                /></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="display-4">Les poissons du lagon Calédonien</h5>
+                  <a class="btn text-white" href="./reservation_activitee.html"
+                    >Réservez</a
+                  >
+                </div>
+              </div>
+              <!-- Bougna -->
+              <div class="carousel-item">
+                <a href="./reservation_activitee.html"
+                  ><img
+                    class="d-block w-100"
+                    src="./img/bougna.jpg"
+                    alt="Bougna"
+                /></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="display-4">Bougna</h5>
+                  <a class="btn text-white" href="./reservation_activitee.html"
+                    >Réservez</a
+                  >
+                </div>
+              </div>
+              <!-- Poisson cru Soyo -->
+              <div class="carousel-item">
+                <a href="./reservation_activitee.html"
+                  ><img
+                    class="d-block w-100"
+                    src="./img/poissonCruSoyo.jpg"
+                    alt="Poisson cru au soyo"
+                /></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="display-4">Poisson cru au soyo</h5>
+                  <a
+                    class="btn text-white stretched-link"
+                    href="./reservation_activitee.html"
+                    >Réservez</a
+                  >
+                </div>
+              </div>
             </div>
+            <!-- Item Previous -->
+            <a
+              class="carousel-control-prev"
+              href="#carouselRestaurant"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <!-- Item Next -->
+            <a
+              class="carousel-control-next"
+              href="#carouselRestaurant"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- FOOTER -->
-    <footer id="contact" class="text-center" style="background-color: #f1f1f1;">
-        <!-- Grid container CONTACTS -->
-        <div class="container pt-4">
-            Contactez-nous !
-            <section class="mb-4">
-                <!-- Phone Number -->
-                +687 23 24 30
-                <br>
-                <!-- e-mail adress -->
-                gite_pam@gmail.com
-                <br>
-                <!-- Facebook -->
-                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                    data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
-                <!-- Instagram -->
-                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                    data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
-                <!-- Linkedin -->
-                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                    data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
-            </section>
-        </div>
+    <footer id="contact" class="text-center" style="background-color: #f1f1f1">
+      <!-- Grid container CONTACTS -->
+      <div class="container pt-4">
+        Contactez-nous !
+        <section class="mb-4">
+          <!-- Phone Number -->
+          +687 23 24 30
+          <br />
+          <!-- e-mail adress -->
+          gite_pam@gmail.com
+          <br />
+          <!-- Facebook -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <!-- Instagram -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <!-- Linkedin -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </section>
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>
