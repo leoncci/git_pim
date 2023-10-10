@@ -54,9 +54,10 @@
     </nav>
     <button type="button " class="btn m-2 " id="button_modal_delete" onclick="modalAnnulation()">Annuler ma reservation</button>
     <a type="button " class="btn m-2 " href="consultation.html">Consulter les réservations
-
+ 
     </a>
     <div class="container text-center">
+        <div id="valideReserve" class="bg-success text-white py-3 d-none"></div>
         <div class="row">
             <div class="col-lg-4 " id="reservation_kanoe" onclick="modalKanoe()">
                 <h1>Kanoe</h1>
@@ -86,7 +87,7 @@
     </div>
     <div class="m-2 text-center">
 
-        <div class="modal fade" id="modalmodify" tabindex="-1" role="dialog" aria-labelledby="modalmodifyTitle"
+        <div class="modal" id="modalmodify" tabindex="-1" role="dialog" aria-labelledby="modalmodifyTitle"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -97,16 +98,17 @@
                         </button>
                     </div>
                     <div class="modal-body">
+                        <div id="erreurMsg" class="bg-danger text-white py-3 my-1 d-none"></div>
                         <form>
                             <div class="form-group">
                                 <label >Nom: </label>
-                                <input class="form-control" id="nom" type="text">
+                                <input class="form-control" id="nom" type="text" required>
 
                                 <label >Prénom: </label>
-                                <input class="form-control" id="prenom" type="text">
+                                <input class="form-control" id="prenom" type="text" required>
 
                                 <label >N° de Téléphone: </label>
-                                <input class="form-control" id="telephone" type="text">
+                                <input class="form-control" id="telephone" type="text" required>
 
                                 <label >Type: </label>
                                 <input class="form-control text-center" id="activite" type="text" disabled required>
@@ -119,7 +121,7 @@
 
                                 <label >Heure de sortie</label>
                                 <input class="form-control" id="heure_fin" type="time" required>
-                          
+                            </div>
 
                                 
                         </form>
@@ -128,7 +130,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" onclick="add()">Reserver</button>
+                        <button type="submit" class="btn btn-primary" onclick="add()">Reserver</button>
                     </div>
                 </div>
             </div>
